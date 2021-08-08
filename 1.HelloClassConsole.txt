@@ -1,0 +1,171 @@
+Classfile /F:/Workspaces/JavaTrainingCodes/src/Hello.class
+  Last modified 2021-8-8; size 1107 bytes
+  MD5 checksum 63d67f07fa34e024eef8544ea7567e4e
+  Compiled from "Hello.java"
+public class Hello
+  minor version: 0																		//java的小版本0
+  major version: 52																		//java的大版本52，表示JDK 8
+  flags: ACC_PUBLIC, ACC_SUPER															//当前的类时public的，并且有父类
+Constant pool:																			//常量池
+   #1 = Methodref          #19.#44        // java/lang/Object."<init>":()V				//常量1表示结合常量19和44，就是java/lang/Object."<init>":()V	
+   #2 = Double             2.0d															//常量2表示2.0d
+   #4 = Long               3l
+   #6 = Fieldref           #45.#46        // java/lang/System.out:Ljava/io/PrintStream;
+   #7 = Class              #47            // java/lang/StringBuilder
+   #8 = Methodref          #7.#44         // java/lang/StringBuilder."<init>":()V
+   #9 = String             #48            // Error usage: num2 + num3 =
+  #10 = Methodref          #7.#49         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #11 = Methodref          #7.#50         // java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+  #12 = Methodref          #7.#51         // java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+  #13 = Methodref          #7.#52         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #14 = Methodref          #53.#54        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #15 = String             #55            // Multiplication: num1 * num4 =
+  #16 = Methodref          #53.#56        // java/io/PrintStream.print:(Ljava/lang/String;)V
+  #17 = Methodref          #53.#57        // java/io/PrintStream.println:(I)V
+  #18 = Class              #58            // Hello
+  #19 = Class              #59            // java/lang/Object
+  #20 = Utf8               <init>
+  #21 = Utf8               ()V
+  #22 = Utf8               Code
+  #23 = Utf8               LineNumberTable
+  #24 = Utf8               LocalVariableTable
+  #25 = Utf8               this
+  #26 = Utf8               LHello;
+  #27 = Utf8               main
+  #28 = Utf8               ([Ljava/lang/String;)V
+  #29 = Utf8               i
+  #30 = Utf8               I
+  #31 = Utf8               args
+  #32 = Utf8               [Ljava/lang/String;
+  #33 = Utf8               num1
+  #34 = Utf8               num2
+  #35 = Utf8               D
+  #36 = Utf8               num3
+  #37 = Utf8               J
+  #38 = Utf8               num4
+  #39 = Utf8               B
+  #40 = Utf8               StackMapTable
+  #41 = Class              #32            // "[Ljava/lang/String;"
+  #42 = Utf8               SourceFile
+  #43 = Utf8               Hello.java
+  #44 = NameAndType        #20:#21        // "<init>":()V
+  #45 = Class              #60            // java/lang/System
+  #46 = NameAndType        #61:#62        // out:Ljava/io/PrintStream;
+  #47 = Utf8               java/lang/StringBuilder
+  #48 = Utf8               Error usage: num2 + num3 =
+  #49 = NameAndType        #63:#64        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #50 = NameAndType        #63:#65        // append:(D)Ljava/lang/StringBuilder;
+  #51 = NameAndType        #63:#66        // append:(J)Ljava/lang/StringBuilder;
+  #52 = NameAndType        #67:#68        // toString:()Ljava/lang/String;
+  #53 = Class              #69            // java/io/PrintStream
+  #54 = NameAndType        #70:#71        // println:(Ljava/lang/String;)V
+  #55 = Utf8               Multiplication: num1 * num4 =
+  #56 = NameAndType        #72:#71        // print:(Ljava/lang/String;)V
+  #57 = NameAndType        #70:#73        // println:(I)V
+  #58 = Utf8               Hello
+  #59 = Utf8               java/lang/Object
+  #60 = Utf8               java/lang/System
+  #61 = Utf8               out
+  #62 = Utf8               Ljava/io/PrintStream;
+  #63 = Utf8               append
+  #64 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #65 = Utf8               (D)Ljava/lang/StringBuilder;
+  #66 = Utf8               (J)Ljava/lang/StringBuilder;
+  #67 = Utf8               toString
+  #68 = Utf8               ()Ljava/lang/String;
+  #69 = Utf8               java/io/PrintStream
+  #70 = Utf8               println
+  #71 = Utf8               (Ljava/lang/String;)V
+  #72 = Utf8               print
+  #73 = Utf8               (I)V
+{
+  public Hello();																				//默认的无参构造函数
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1								
+         0: aload_0																				//把本地变量表里面的第0个位置的变量加载到栈上来
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V			//调用了当前类的父类，看#1 常量池的1号常量，可以知道是Object的初始化方法
+         4: return																				//返回
+      LineNumberTable:																			//显示偏移量对应的代码行号
+        line 1: 0																				//偏移量0开始代表的是java代码里面的第一行
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LHello;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V								//表示返回的是void类型
+    flags: ACC_PUBLIC, ACC_STATIC									//这个类是public static
+    Code:
+      stack=4, locals=8, args_size=1								//最大栈深度是4，本地变量8个，入参1个	
+         0: iconst_1												//压栈了一个int类型的常量1，压栈的意思就是把这个常量加载到栈上面，进行后面的操作
+         1: istore_1												//写到本地变量表里标号1的位置上面去保存
+         2: ldc2_w        #2                  // double 2.0d		//将2号常量池的值压栈，可以看到常量池2号的值是2.0d
+         5: dstore_2												//将double的这个常量写到本地变量表里的位置2
+         6: ldc2_w        #4                  // long 3l			//将4号常量池的值压栈，可以看到常量池4号的值是31
+         9: lstore        4											//将long的这个常量写到本地变量表里的位置4
+        11: iconst_4												//压栈了一个4
+        12: istore        6											//写到本地变量表里的位置6
+        14: iload_1													//又把槽位1得变量加载到栈上								
+        15: bipush        10										//入栈
+        17: if_icmpge     50										//判断int类型的这个操作数是否大于或者等于另一个操作数，否则就跳到偏移量50的位置
+        20: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;				//获取静态字段System.out，返回PrintStream
+        23: new           #7                  // class java/lang/StringBuilder									//new 出一个对象，从常量池#7可以知道是 StringBuilder 对象
+        26: dup																									//压栈压到栈上去
+        27: invokespecial #8                  // Method java/lang/StringBuilder."<init>":()V					//调用StringBuilder的初始化方法		
+        30: ldc           #9                  // String Error usage: num2 + num3 =								//这里是把这个字符串压栈。当int取值-2147483648~2147483647时，JVM采用ldc指令将常量压入栈中。
+        32: invokevirtual #10                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; 	//调用StringBuilder的append方法，返回StringBuilder
+        35: dload_2																														//把变量2加载回栈上
+        36: invokevirtual #11                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;					 	//调用StringBuilder的append方法，返回StringBuilder
+        39: lload         4																												//把变量4加载回栈上
+        41: invokevirtual #12                 // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;						//调用StringBuilder的append方法，返回StringBuilder
+        44: invokevirtual #13                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;							//调用String的toString方法,返回String
+        47: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V								//调用PrintStream的println方法,返回void
+        50: iconst_0																							//压栈了一个int的常量0										
+        51: istore        7																						//写到变量表槽位7的位置保存，就是i参数
+        53: iload         7																						//又把变量7加载回栈上
+        55: iload_1																								//把变量1加载到栈上
+        56: if_icmpge     83																					//int类型比较，如果大于等于就继续，否则跳到偏移量83的位置
+        59: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;				//获取静态字段System.out，返回PrintStream
+        62: ldc           #15                 // String Multiplication: num1 * num4 =							//压栈，把字符串"Multiplication: num1 * num4 ="压到栈上
+        64: invokevirtual #16                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V			//调用PrintStream的print方法,返回void
+        67: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;				//获取静态字段System.out，返回PrintStream
+        70: iload_1																								//把变量1加载到栈上
+        71: iload         6																						//把变量6加载到栈上
+        73: imul																								//init类型相乘
+        74: invokevirtual #17                 // Method java/io/PrintStream.println:(I)V						//调用PrintStream的println方法,返回void
+        77: iinc          7, 1																					//iinc表示局部变量自增，这里是变量7自增1
+        80: goto          53																					//去到偏移量53的位置
+        83: return																								//返回，结束方法
+      LineNumberTable:																							//可以知道偏移量表示哪行代码
+        line 3: 0
+        line 4: 2
+        line 5: 6
+        line 6: 11
+        line 7: 14
+        line 8: 20
+        line 10: 50
+        line 11: 59
+        line 12: 67
+        line 10: 77
+        line 14: 83
+      LocalVariableTable:																//本地变量表，默认用javac编译的话，是丢失的，想要看到本地变量表的话，需要用javac -c进行编译
+        Start  Length  Slot  Name   Signature											//变量的位置。长度，槽位（第几个），常量名，常量类型
+           53      30     7     i   I													//第7号的位置是1,类型是int
+            0      84     0  args   [Ljava/lang/String;									//第0号的位置是args,类型是String
+            2      82     1  num1   I													//第1号的位置是num1,类型是int
+            6      78     2  num2   D													//第2号的位置是num2,类型是bouble
+           11      73     4  num3   J													//第4号的位置是num3,类型是Long
+           14      70     6  num4   B													//第6号的位置是num4,类型是Byte
+      StackMapTable: number_of_entries = 3
+        frame_type = 255 /* full_frame */
+          offset_delta = 50
+          locals = [ class "[Ljava/lang/String;", int, double, long, int ]
+          stack = []
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 29
+}
+SourceFile: "Hello.java"
